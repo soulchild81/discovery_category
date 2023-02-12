@@ -1,6 +1,9 @@
 #discovery_category 프로젝트 
 
 ## - 카테고리 테스트 프로젝트 
+    1. 카테고리의 등록 , 수정 , 삭제 , 조회 를 구현한 API 프로젝트 입니다.
+    2. swagger 와 restdocs 를 사용하여 클라이언트와의 협업을 원할하게 할수 있게 함
+
 
 ## - UseLibrary
     Application --> SpringBoot 2.7.3
