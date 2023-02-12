@@ -17,16 +17,16 @@
 
 ## - 빌드 및 수행 
   1. git clone https://github.com/soulchild81/discovery_category.git
-       ###프로젝트를 클론 받는다.
+     프로젝트를 클론 받는다.
      
   2. cd discovery_category
-       ###해당 경로로 이동 
+     해당 경로로 이동 
      
   3. ./gradlew build 
-       ###빌드 수행 
+     빌드 수행 
   
   4. cd /discovery_category/build/libs
-       ###경로 이동
+     경로 이동
 
   5. java -jar discovery_category-0.0.1-SNAPSHOT.jar
-       ###서버 구동
+     서버 구동
