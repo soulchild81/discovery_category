@@ -1,0 +1,98 @@
+ifndef::snippets[]
+:snippets: ./build/generated-snippets
+endif::[]
+
+
+= API Guide REST Docs =
+(C) Jongok Ku
+:doctype: book
+:toc-title: Index
+:toc: auto
+:toclevels: 5
+:sectlinks:
+:icons: font
+:source-highlighter: prettify
+
+[[overview]]
+== 1.문서 개요
+* API에 대한 레퍼런스 문서 입니다.
+* 문의사항은 soulchild81@naver.com 으로 연락주세요
+
+[[api-status-codes]]
+== 2.API Exception 코드
+|===
+| 숫자코드 | 코드 | 메세지
+| `_0_`
+| SUCCESS
+| 성공하였습니다
+| `_100_`
+| INVALID_PARAMS
+| 잘못된 파라미터입니다.
+| `_101_`
+| INVALID_ACCESS
+| 잘못된 접근입니다`
+| `_102_`
+| NONE_QUERY
+| 검색어가 존재하지 않습니다.
+| `_200_`
+| NOT_LOGGED
+| 로그인 후 이용할 수 있습니다.
+| `_201_`
+| NONE_TOKEN
+| ACCESS_TOKEN이 존재하지 않습니다.
+| `_202_`
+| INVALID_TOKEN
+| 유효한 TOKEN이 아닙니다.
+| `_300_`
+| CONNECTION_ERROR
+| 통신에 실패 했습니다.
+| `_1000_`
+| UNKNOWN_ERROR
+| 오류가 발생하였습니다.
+|===
+
+[[api-common-code]]
+== 3.API 공통 구조
+* 각 API 는 RESTFUL 하도록 POST , GET , PUT , DELETE , PATCH 등의 HTTP METHOD 를 명확히 하여 작성한다.
+* API 는 JSON 형식으로 결과를 반환함 다른 타입으로 리턴시 상세 기술한다.( ex)webview )
+* API 는 version 값을 가장 상위에 갖는다.
+
+* API 공통 코드
+|===
+| Field | Description
+| `_return_code_`
+| 검색 API Exception 코드 참조
+| `_message_`
+| API 의 상세 결과 내용
+
+| `_message_type_`
+| API 의 상세 결과 코드
+| `_data_`
+| 조회된 데이터 오브젝트
+|===
+
+
+
+
+[[api]]
+== 4.Service API
+[[api-index1]]
+=== 5.1 카테고리 조회
+[[search1]]
+==== 5.1.1 카테고리 조회
+URI:: /v1/category
+HTTP Method:: GET
+Description:: 전체 카테고리를 조회한다.
+Authentication:: NONE
+
+.Http Request
+include::{snippets}/category/http-request.adoc[]
+
+.Parameters
+None
+
+.Http Response
+include::{snippets}/category/response-body.adoc[]
+
+.Result
+include::{snippets}/category/response-fields-beneath-data.adoc[]
