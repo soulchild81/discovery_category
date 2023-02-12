@@ -15,8 +15,8 @@
     H2
 
 ## - 관련 URL 
-  ### restdocs 주소 : http://localhost:8080/docs/api_doc.html
-  ### swagger 주소 : http://localhost:8080/swagger-ui.html
+  #restdocs 주소 : http://localhost:8080/docs/api_doc.html
+  #swagger 주소 : http://localhost:8080/swagger-ui.html
 
 ## - 빌드 및 수행 
   1. git clone https://github.com/soulchild81/discovery_category.git
