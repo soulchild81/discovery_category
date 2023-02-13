@@ -4,9 +4,9 @@
     1. 카테고리의 등록 , 수정 , 삭제 , 조회 를 구현한 API 프로젝트 입니다.
     2. swagger 와 restdocs 를 사용하여 클라이언트와의 협업을 원할하게 할수 있게 함
     3. RESTFUL 한 API 구현 
-    4. 단위 테스트 , 엔드투엔드 테스트를 통하여 restdocs 문서 빌드 추가 src/test/java/com/discovery/categoty/CategoryTest 파일에 기술
+    4. 단위 테스트 , 엔드투엔드 테스트를 통하여 restdocs 문서 빌드 추가 
+       src/test/java/com/discovery/categoty/CategoryTest 파일에 기술
     5. 카테고리 depth 는 상위와 하위 두 단계만 있다고 가정후 진행 , 상위 카테고리 코드는 CU 하위는 CL 로 지정
-    6. 
 
 
 ## - UseLibrary
@@ -22,6 +22,7 @@
 ## - 관련 URL 
   1. restdocs 주소 : http://localhost:8080/docs/api_doc.html
   2. swagger 주소 : http://localhost:8080/swagger-ui.html
+  3. H2 웹콘솔 주소 : http://localhost:8080/h2-console    id:sa pw: password
 
 ## - 빌드 및 수행 
   1. git clone https://github.com/soulchild81/discovery_category.git
