@@ -38,7 +38,8 @@
      경로 이동
 
   5. java -jar discovery_category-0.0.1-SNAPSHOT.jar
-     서버 구동  (빌드된 jar 다운로드 링크 : https://docs.google.com/uc?export=download&id=1QpbIMlOVyw3ljI-M5GknPvnWKuTMKPON)
+     서버 구동 
+     #### 빌드된 jar 다운로드 링크 : https://docs.google.com/uc?export=download&id=1QpbIMlOVyw3ljI-M5GknPvnWKuTMKPON
      <img width="1557" alt="스크린샷 2023-02-13 오후 2 34 22" src="https://user-images.githubusercontent.com/54564644/218378803-7bf1fa68-d493-496b-ac6b-f937c921fe89.png">
 
      
